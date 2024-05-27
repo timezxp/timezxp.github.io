@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Julio Coronetti | Portfolio</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/script.js" defer></script>
+</head>
+
+<body>
+    <nav id="topBar">
+        <a href="#">JULIO CORONETTI</a>
+        <button id="menu"></button>
+        <ul id="navList">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li>
+                <a href="#contact"><span>CONTACT</span></a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <main>
+            <p>Hi! My name is</p>
+            <h1>Julio Coronetti!</h1>
+            <p>And I am <span>Full Stack Developer.</span></p>
+            <p>
+                I am a web developer specializing in building exceptional web
+                applications. Focused on making incredible and accessible experiences.
+            </p>
+            <a href="#contact" id="about">SEE MORE ABOUT ME</a>
+        </main>
+    </header>
+
+    <section class="about">
+        <div id="textAbout">
+            <div id="headerTextAbout">
+                <h2>ABOUT ME</h2>
+                <hr />
+            </div>
+
+            <div id="contentTextAbout">
+                <p>
+                    Hello! I'm <em>Julio Coronetti</em>, you'll see me around as
+                    <em>"timexp"</em>. I like creating different and fun things that
+                    feed the web. My interest in programming started in 2015 when I
+                    tried to make a game with C# using the Unity game engine! Two years
+                    ago I was introduced to web development, making my first static
+                    websites using HTML, CSS and JavaScript. Today, I build complete web
+                    applications using <em>TypeScript</em> with <em>ReactJS</em> and
+                    <em>Python</em> with <em>Django</em>.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <img src="assets/images/profileImage.png" alt="Profile Image" id="profileImage" />
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div id="titleSkills">
+            <h2>SKILLS</h2>
+            <hr />
+        </div>
+
+        <div id="cardSkills">
+            <div class="card" onclick="showModal(1)">
+                <img src="assets/images/frontend-icon.png" />
+                <p>Front-End</p>
+            </div>
+            <div class="card" onclick="showModal(2)">
+                <img src="assets/images/backend-icon.png" />
+                <p>Back-End</p>
+            </div>
+            <div class="card" onclick="showModal(3)">
+                <img src="assets/images/cloud-icon.png" />
+                <p>Cloud</p>
+            </div>
+        </div>
+
+        <div id="modal">
+            <div id="areaCloseModal">
+                <div id="closeModal" onclick="hideModal()">
+                    <img width="24" height="24" src="assets/images/plus-icon.svg" alt="plus" />
+                </div>
+            </div>
+            <div id="modalContent">
+                <div id="boxTitleModal">
+                    <h1 id="titleModal"></h1>
+                </div>
+
+                <div id="cardsModal">
+                    <div class="cardModal" title="ReactJS">
+                        <img src="assets/images/react-icon.svg" alt="ReactJS icon" class="iconModal">
+                        <p class="subtitleModal">ReactJS</p>
+                    </div>
+                    <div class="cardModal" title="TypeScript">
+                        <img src="assets/images/typescript-icon.svg" alt="TypeScript icon" class="iconModal">
+                        <p class="subtitleModal">TypeScript</p>
+                    </div>
+                    <div class="cardModal" title="Tailwindcss">
+                        <img src="assets/images/tailwind-icon.svg" alt="Tailwindcss icon" class="iconModal">
+                        <p class="subtitleModal">Tailwindcss</p>
+                    </div>
+                    <div class="cardModal" title="HTML">
+                        <img src="assets/images/html-icon.svg" alt="HTML icon" class="iconModal">
+                        <p class="subtitleModal">HTML</p>
+                    </div>
+                    <div class="cardModal" title="JavaScript">
+                        <img src="assets/images/javascript-icon.svg" alt="JavaSript icon" class="iconModal">
+                        <p class="subtitleModal">JavaScript</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div id="titleProjects">
+            <hr />
+            <h2>Projects</h2>
+            <hr />
+        </div>
+
+        <div class="projectsGallery">
+            <button class="backButton"></button>
+            <div class="projectsArea">
+                <div id="projectExample"></div>
+                <div id="infoProject">
+                    <h1 id="projectTitle">Projeto</h1>
+                    <p id="projectDescription">
+                        Descrição sobre o projeto destacando as tecnologias e objetivo do
+                        projetos.
+                    </p>
+                    <div id="linkInfoProject">
+                        <a href="" target="_blank" class="buttonInfoProject">Repository</a>
+                        <a href="" target="_blank" class="buttonInfoProject">View</a>
+                    </div>
+                </div>
+            </div>
+            <button class="nextButton"></button>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div id="titleContact">
+            <h2>CONTACT</h2>
+            <hr />
+        </div>
+
+        <div id="boxContact">
+            <div id="textContact">
+                <h2>Do you have a new idea?</h2>
+                <p>Contact me and let's develop your idea!</p>
+                <a href="#copyEmail" id="sendEmail">SEND ME A EMAIL</a>
+            </div>
+
+            <div id="linkContactBox">
+                <a href="" class="linksContacts">
+                    <img src="assets/images/linkedin-icon.png" alt="Linkdin icon" class="imageLinkContact">
+                </a>
+                <a href="" class="linksContacts">
+                    <img src="assets/images/github-icon.png" alt="Github icon" class="imageLinkContact">
+                </a>
+                <a href="" class="linksContacts">
+                    <img src="assets/images/credly-icon.png" alt="Credly icon" class="imageLinkContact">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <aside id="emailAside">
+        <button id="copyEmail" onclick="copyEmail()">
+            <div id="emailLogoBox">
+                <img src="assets/images/email-icon.png" alt="new-post" />
+            </div>
+
+            <div id="emailTextBox">
+                <p>timeset13@outlook.com</p>
+            </div>
+        </button>
+    </aside>
+
+    <footer class="footer">
+        <div id="boxFooter">
+            <div id="boxLogoFooter">
+                <p id="titleLogoFooter">
+                    JULIO <br />
+                    CORONETTI
+                </p>
+                <p id="subtitleLogoFooter">FULL-STACK DEVELOPER</p>
+            </div>
+
+            <nav id="footerBar">
+                <ul>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">SKILLS</a></li>
+                    <li><a href="">PROJECTS</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <div id="linkFooterBox">
+                <a href="" class="linksContacts">
+                    <img src="assets/images/linkedin-icon.png" alt="Linkdin icon" class="imageLinkContact">
+                </a>
+                <a href="" class="linksContacts">
+                    <img src="assets/images/github-icon.png" alt="Github icon" class="imageLinkContact">
+                </a>
+                <a href="" class="linksContacts">
+                    <img src="assets/images/credly-icon.png" alt="Credly icon" class="imageLinkContact">
+                </a>
+            </div>
+        </div>
+
+        <p id="copyright">&copy; JULIO CORONETTI 2024 - All rights reserved</p>
+    </footer>
+</body>
+
+</html>
