@@ -421,6 +421,11 @@ main a:hover {
     color: #2EFE81;
     text-decoration: none;
     border-radius: 5px;
+    transition: .5s;
+}
+
+.buttonInfoProject:hover {
+    background-color: #2e2e59;
 }
 
 /* Contact */
