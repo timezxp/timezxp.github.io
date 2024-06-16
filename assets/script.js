@@ -91,3 +91,9 @@ function hideModal() {
     cards[3].style.display = "flex";
     cards[4].style.display = "flex";
 }
+
+// Copy Email
+
+function copyEmail() {
+    navigator.clipboard.writeText("timeset13@outlook.com")
+}

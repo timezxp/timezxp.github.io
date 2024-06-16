@@ -60,7 +60,7 @@ header {
 }
 
 main {
-    width: 60%;
+    width: max-content;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -566,6 +566,8 @@ main a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    cursor: default;
 }
 
 #emailLogoBox img {
@@ -580,6 +582,13 @@ main a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: .5s;
+}
+
+#emailTextBox:hover {
+    transform: translate(1%, -5%);
+    background-color: #56f395;
 }
 
 #emailTextBox p {
@@ -654,7 +663,21 @@ main a:hover {
     font-family: 'Inter';
 }
 
-@media (max-width: 700px) {
+
+
+@media (max-width: 1366px) {
+
+}
+
+@media (max-width: 1024px) {
+    
+}
+
+@media (max-width: 800px) {
+    
+}
+
+@media (max-width: 500px) {
 
     #menu {
         display: block;
@@ -691,7 +714,7 @@ main a:hover {
     }
 
     main {
-        width: 70%;
+        width: max-content;
     }
 
     header h1 {
